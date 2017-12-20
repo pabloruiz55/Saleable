@@ -2,14 +2,14 @@ pragma solidity ^0.4.19;
 
 /**
  * @author Pablo Ruiz <me@pabloruiz.co>
- * @title Saleable
+ * @title Sellable
  */ 
 
 /**
- * @dev Saleable contract should be inherited by any other contract that
+ * @dev Sellable contract should be inherited by any other contract that
  * wants to provide a mechanism for selling its ownership to another account
  */
-contract Saleable {
+contract Sellable {
     
     // The owner of the contract
     address public owner;
@@ -43,7 +43,7 @@ contract Saleable {
     
     event Transfer(uint _saleDate, address _from, address _to, uint _salePrice);
 
-    function Saleable() public{
+    function Sellable() public{
         owner = msg.sender;
         Transfer(now,address(0),owner,0);
     }
