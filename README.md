@@ -1,8 +1,8 @@
-# Saleable
-A protocol for Saleable Smart Contracts
+# Sellable
+A protocol for Sellable Smart Contracts
 
 ## Simple Summary
-The Saleable Contract protocol allows contracts to be sold in exchange of ether.
+The Sellable Contract protocol allows contracts to be sold in exchange of ether.
 
 ## Abstract
 The following discusses a protocol for smart contracts that can be sold by their owners. 
@@ -13,8 +13,8 @@ Given that there is no concept of "whoever deploys a contract owns it" in Ethere
 Such protocol could allow, among other things, for a "smart contract marketplace" or be used by contractors so they can be certain that the code they deploy on behalf of someone else will be paid for when they relinquish ownership.
 
 ## Specification
-## Saleable 
-**NOTE:** The contract inheriting the Saleable base contract must enforce the usage of the onlyOwner modifier. Owning a contract means having `owner` set to your account address. 
+## Sellable 
+**NOTE:** The contract inheriting the Sellable base contract must enforce the usage of the onlyOwner modifier. Owning a contract means having `owner` set to your account address. 
 
 ### Methods
 
